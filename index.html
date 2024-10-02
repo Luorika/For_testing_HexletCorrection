@@ -43,6 +43,26 @@
         <p>Шотландия (англ. Scotland, гаэл. Alba) входит в состав Соединенного Королевства Великобритании и Северной Ирландии. До 1 мая 1707 года Королевство Шотландия было независимым государством. Несмотря на протесты шотллландцев, в этот день была заключена парламентская Уния с Англией, в рзультате чего Щотландия стала частью Великобритании, наряду с Северной Ирландией, Англией и Уэльсом. Но все же Шотландия наиболее автономна среди этих четырех государств Великобритании: она имеет свою правовую систему, свою церковь и даже свой парламент. .</p>
         <p>Шотландия занимает северную треть острова Великобритания, а также Оркнейские, Шетландские и Гебридские острова. Плошадь этой страны гор, озер и потрясающих долин равна 79 тысячам квадратных километров. Население насчитывает около пяти милллионов человек.</p>
         <p>Ниже можно добавить JavaScript для проверки работы скриптов:</p>
+        <script>
+function loadScript(src, callback) {
+  const body = document.querySelector('body')
+  const script = document.createElement('script');
+  script.src = src;
+  script.onload = callback;
+  body.appendChild(script);
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  const scriptSrc = 'https://cdn.jsdelivr.net/gh/hexlet/hexlet-correction@latest/src/widget/index.js?v=' + new Date().getTime();
+  loadScript(scriptSrc, function () {
+    handleTypoReporter({
+      authorizationToken: 'MjY1ODplN2RkZjM3OS1kNDkwLTQwOWEtOWJiYS1jZTA1NzA5ZjA4ZTg=',
+      workSpaceUrl: 'https://fixit.hexlet.io',
+      workSpaceId: '2658'})
+  });
+});
+</script>
+                  
         
     </section>
 
